@@ -1,0 +1,815 @@
+/*______CODE PRINCIPAL______*/
+
+@font-face{
+    font-family: 'formula';
+    src: url(font/PPFormulaCondensed-Bold.woff2)format('woff2');
+    src: url(font/PPFormulaCondensed-Bold.woff)format('woff');
+}
+
+@font-face{
+    font-family: 'Neuebit';
+    src: url(font/PPNeueBit-Bold.woff2)format('woff2');
+    src: url(font/PPNeueBit-Bold.woff)format('woff');
+}
+
+.body {
+    font-family: ApfelGrotezk, Arial, Helvetica, sans-serif;
+    cursor: url(Cursorlogo/croix.png), auto;
+    }
+    
+    a:hover, button:hover {cursor : url(Cursorlogo/croix.png), auto;}
+
+::selection {
+        background-color: rgb(255, 0, 255); 
+       
+    }
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.page{
+    max-width: 100%;
+}
+
+
+/*______HAUT/BAS DE PAGE______*/
+
+   
+
+.header {
+    position:fixed;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: black;
+    align-items: center;
+    z-index: 1;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+    width: 100%;
+    left: -0.03em;
+    font-family: 'formula', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    }
+
+
+.header a{
+color:  white;
+text-decoration: none;
+border-color: black;
+width: 100%;
+transition: 0.5s;
+
+}
+
+.header a:visited {
+color:  white;
+text-decoration: none;
+border-color: black;
+width: 100%;
+transition: 0.5s;
+
+}
+
+.header a:hover {
+color: rgb(255, 0, 255);
+text-decoration: none;
+border-color: black;
+width: 100%;
+transition: 0.5s;
+}
+
+
+
+.footer{
+    text-align: center;  
+    text-decoration: none;
+    font-family: 'Neuebit', sans-serif;
+    font-size: 20px; 
+    text-transform: uppercase;
+    padding: 20px;
+   
+}
+
+.footer a{
+    color:  white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+ 
+.footer a:visited {
+    color:  white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: rgb(255, 0, 255);
+    text-decoration: none;
+    transition: 0.5s;
+}
+    
+    /*__________________________________texte déroulant_____________________________*/
+    
+    .scroll {
+        display: block;
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        left: 0px;
+        top: 0%; 
+        z-index: 10;
+        transition: 0.5s;
+    }
+ 
+
+.scrollingtext {
+    text-transform: uppercase;
+    display:block;
+    font-family:  'Neuebit', sans-serif;
+    font-size: 26px;
+    font-weight: medium;
+    text-decoration: none;
+        color: white;
+        background-color: black;
+        height: 20px;
+        padding-top: 5px; 
+        white-space: nowrap;
+        text-indent: 100%;
+        animation: floatText 40s infinite linear;
+    }
+
+    
+
+    
+      .scrollingtext:hover{
+        color: white;
+        animation-play-state: paused;
+        background-color: rgb(255, 0, 255);
+        transition: 0.5s;
+    }
+      
+    
+    @-webkit-keyframes floatText {
+        from {
+            text-indent: 0%;
+        }
+    
+        to {
+            text-indent: -100%;
+        }
+    }
+
+    
+    
+    
+    /*__________________________________________LOAD________________________________________*/
+
+    
+    .image2{
+        position: fixed;
+        top: 4.5%;
+        left: 68.5%;
+        display:inline;
+        align-items: center;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+        width: 7%;
+        height: 7%; 
+      }
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  
+      .image3{
+        position: fixed;
+        top: 4.5%;
+        left: 25.5%;
+        display:inline;
+        align-items: center;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+        width: 7%;
+        height: 7%; 
+
+      }
+
+
+      .portfolio{
+        position: fixed;
+        top: 4%;
+        left: 70%;
+        display:inline;
+        align-items: center;
+        -webkit-animation:spin 4s linear infinite;
+        -moz-animation:spin 4s linear infinite;
+        animation:spin 4s linear infinite;
+      }
+  
+       
+
+/*__________________________________________instamail________________________________________*/
+    
+mark {
+    background-color: black;
+    color: rgb(255, 0, 255);
+}
+
+.instamail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+    gap: 50px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background: black;
+
+}
+
+.insta {
+    text-align: center;  
+    overflow: hidden;
+    text-decoration: none;
+    font-family: 'Neuebit', sans-serif;
+    font-size: 30px; 
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    border-radius: 1000px;
+    background: black;
+}
+
+.instamail a{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.instamail a:visited{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.instamail a:hover{
+    color: white;
+    background-color: rgb(255, 0, 255);
+    transition: 0.5s;
+}
+    
+
+
+
+.BIO{
+  
+    text-align: center;  
+    overflow: hidden;
+    text-decoration: none;
+    font-family: 'Neuebit', sans-serif;
+    color: white;
+    text-align: center;
+    background-color: black;
+    line-height: 75%;
+   
+}
+
+
+/*__________________________________________RESPONSIVE________________________________________*/
+    
+
+@media (min-width:320px){
+    .grid{
+        grid-template-columns: 1fr;
+        padding-top: 90px;
+        padding-left: 19px;
+        padding-right: 0px;
+        gap: 15px;
+        
+    }
+ 
+    .footer{
+        font-size: 14px; 
+        padding-left: 40px;
+    }
+
+    .visuels{
+        font-size: 12px; 
+        border: 1.5px solid;
+        border-color: black;
+        border-radius: 18px;
+    }
+    .header{
+        font-size: 50px;
+        top: 19px;
+        height: 3.2rem;
+        grid-template-columns: repeat(2,1fr);
+        border: 1.5px solid;
+        z-index: 1;
+    }
+
+    .nomobile{
+        display: none;
+    }
+    .nomobile2{
+        display: none;
+    }
+     .image2{
+        display: none;
+    }
+    .image3{
+        display: none;
+    }
+    .scrollingtext {
+        height: 14px;
+        font-size: 17px;
+        }
+
+.BIO{
+    padding-top: 90px;
+    gap: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 12px; 
+}
+
+.instamail{
+    grid-template-columns: repeat(2, 1fr);       
+    padding-top: 20px;
+    gap: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.insta {
+    font-size: 14px; 
+}
+
+}
+
+
+@media (min-width:375px){
+    .grid{
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+        padding-left: 19px;
+        padding-right: 0px;
+        gap: 15px;
+        
+    }
+ 
+    .footer{
+        font-size: 14px; 
+        padding-left: 40px;
+    }
+
+    .visuels{
+        font-size: 12px; 
+        border: 1.5px solid;
+        border-color: black;
+        border-radius: 18px;
+    }
+    .header{
+        font-size: 58px;
+        top: 19px;
+        height: 3.8rem;
+        grid-template-columns: repeat(2,1fr);
+        border: 2px solid;
+        z-index: 1;
+    }
+
+    .nomobile{
+        display: none;
+    }
+    .nomobile2{
+        display: none;
+    }
+     .image2{
+        display: none;
+    }
+    .image3{
+        display: none;
+    }
+    .scrollingtext {
+        height: 14px;
+        font-size: 17px;
+        }
+    .BIO{
+        padding-top: 110px;
+        gap: 10px;
+        padding-left: 80px;
+        padding-right: 80px;
+        font-size: 12px; 
+    }
+
+    .instamail{
+        grid-template-columns: repeat(2, 1fr);       
+        padding-top: 30px;
+        gap: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    
+    }
+    
+    .insta {
+        font-size: 14px; 
+    }
+    
+    
+}
+
+@media (min-width:640px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 136px;
+        padding-left: 30px;
+        padding-right: 10px;
+        gap: 40px;
+    }
+    .footer{
+        font-size: 20px; 
+    }
+
+    .visuels{
+        font-size: 13px; 
+        border: 2px solid;
+        border-color: black;
+        border-radius: 18px;
+    }
+
+    .header{
+        font-size: 68px;
+        top: 22px;
+        height: 4.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid;
+        z-index: 1;
+    }
+    
+    .nomobile{
+        display: none;
+    }
+    .nomobile2{
+        display: grid;
+    }
+     .image2{
+        display: none;
+    }
+    .image3{
+        display: none;
+    }
+    .scrollingtext {
+        height: 19px;
+        font-size: 26px;
+        }
+
+    .BIO{
+        padding-top: 150px;
+        gap: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 18px; 
+    }
+
+    .instamail{
+        grid-template-columns: repeat(2, 1fr);       
+        padding-top: 30px;
+        gap: 30px;
+        padding-left: 120px;
+        padding-right: 120px;
+    
+    }
+    
+    .insta {
+        font-size: 20px; 
+    }
+    
+}
+
+@media (min-width:960px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        padding-top: 158px;
+        gap: 40px;
+    }
+    .visuels{
+        font-size: 13px; 
+        border: 2px solid;
+        border-color: black;
+        border-radius: 20px;
+    }
+
+    .footer{
+        font-size: 17px; 
+    }
+
+    .header{
+        font-size: 78px;
+        top: 22px;
+        height: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid;
+        z-index: 1;
+    }
+
+
+    .nomobile{
+        display: none;
+    }
+    .nomobile2{
+        display: grid;
+    }
+    .image2{
+        display: none;
+    }
+    .image3{
+        display: none;
+    }
+    .scrollingtext {
+        height: 19px;
+        font-size: 26px;
+        }
+
+    .BIO{
+        padding-top: 130px;
+        gap: 10px;
+        padding-left: 300px;
+        padding-right: 300px;
+        font-size: 17px; 
+    }
+
+    .instamail{
+        grid-template-columns: repeat(2, 1fr);       
+        padding-top: 30px;
+        gap: 30px;
+        padding-left: 200px;
+        padding-right: 200px;
+    
+    }
+    
+    .insta {
+        font-size: 20px; 
+    }
+
+}
+
+
+@media (min-width:1280px){
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+        padding-top: 128px;
+        gap: 40px;
+        padding-left: 27px;
+        padding-right: 10px;
+    }
+    .visuels{
+        font-size: 15px; 
+        border: 2.5px solid;
+        border-color: black;
+        border-radius: 20px;
+    }
+
+    .footer{
+        font-size: 20px; 
+    }
+
+    .header{
+        font-size: 60px;
+        top: -37px;
+        height: 8rem;
+        grid-template-columns: repeat(7, 1fr);
+        border: 2.5px solid;
+    }
+
+    .nomobile{
+        display: grid;
+        color: white;
+    }
+    .nomobile2{
+        display: grid;
+    }
+    .image2{
+        position:fixed;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            height: 45px;
+    
+    }
+    .image3{
+        position:fixed;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            height: 45px;
+    }
+    .scrollingtext {
+    height: 19px;
+    font-size: 26px;
+    }
+
+    .BIO{
+        padding-top: 150px;
+        gap: 10px;
+        padding-left: 400px;
+        padding-right: 400px;
+        font-size: 20px; 
+    }
+
+    .instamail{
+        grid-template-columns: repeat(2, 1fr);       
+        padding-top: 30px;
+        gap: 40px;
+        padding-left: 300px;
+        padding-right: 300px;
+    
+    }
+    
+    .insta {
+        font-size: 25px; 
+    }
+  
+}
+
+
+@media (min-width:1919px){
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+        padding-top: 178px;
+        padding-left: 25px;
+        padding-right: 10px;
+        gap: 40px;
+    }
+    .visuels{
+        font-size: 18px; 
+        border: 3px solid;
+        border-color: black;
+        border-radius: 30px;
+    }
+
+    .footer{
+        font-size: 22px; 
+    }
+    .header{
+        font-size: 82px;
+        top: -47px;
+        height: 11.3rem;
+        grid-template-columns: repeat(7, 1fr);
+        border: 3px solid;
+        z-index: 1;
+    }
+
+    .nomobile{
+        display: grid;
+        color: white;
+    }
+    .nomobile2{
+        display: grid;
+    }
+    .image2{
+        position:fixed;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            height: 70px;
+    }
+    .image3{
+        position:fixed;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            height: 70px;
+    }
+
+
+    .BIO{
+        padding-top: 200px;
+        gap: 10px;
+        padding-left: 580px;
+        padding-right: 580px;
+        font-size: 25px; 
+    }
+
+    .instamail{
+        grid-template-columns: repeat(2, 1fr);       
+        padding-top: 40px;
+        gap: 50px;
+        padding-left: 400px;
+        padding-right: 400px;
+    
+    }
+    
+    .insta {
+        font-size: 35px; 
+    }
+    .scrollingtext {
+        height: 19px;
+        font-size: 26px;
+        }
+  
+    
+}
+
+
+@media (min-width:2559px){
+    .grid{
+        grid-template-columns: repeat(5,1fr);
+        padding-top: 200px;
+        padding-left: 27px;
+        padding-right: 10px;
+        gap: 40px;
+    }
+    .visuels{
+        font-size: 22px; 
+        border: 4px solid;
+        border-color: black;
+    }
+
+    .footer{
+        font-size: 28px; 
+    }
+    .header{
+        font-size: 109px;
+        top: -70px;
+        height: 14.5rem;
+        grid-template-columns: repeat(7, 1fr);
+        border: 4px solid;
+        z-index: 1;
+    }
+
+    .nomobile{
+        display: grid;
+        color: white;
+    }
+    .nomobile2{
+        display: grid;
+    }
+    .image2{
+        position:fixed;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            height: 80px;
+    }
+    .image3{
+        position:fixed;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            height: 80px;
+    }
+
+    .scrollingtext {
+        font-size: 40px;
+        height: 28px;
+}
+
+    .BIO{
+        padding-top: 300px;
+        gap: 10px;
+        padding-left: 600px;
+        padding-right: 600px;
+        font-size: 40px; 
+    }
+
+    .instamail{
+        grid-template-columns: repeat(2, 1fr);       
+        padding-top: 40px;
+        gap: 50px;
+        padding-left: 400px;
+        padding-right: 400px;
+    
+    }
+    
+    .insta {
+        font-size: 50px; 
+    }
+
+}
+
+
+
+
+
