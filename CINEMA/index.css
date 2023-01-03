@@ -1,0 +1,248 @@
+/*______CODE PRINCIPAL______*/
+
+@font-face{
+    font-family: 'formula';
+    src: url(font/PPFormulaCondensed-Black.woff2)format('woff2');
+    src: url(font/PPFormulaCondensed-Black.woff)format('woff');
+}
+
+
+@font-face{
+    font-family: 'formula2';
+    src: url(font/PPFormulaCondensed-Bold.woff2)format('woff2');
+    src: url(font/PPFormulaCondensed-Bold.woff)format('woff');
+}
+
+@font-face{
+    font-family: 'migra';
+    src: url(font/PPMigra-Regular.woff2)format('woff2');
+    src: url(font/PPMigra-Regular.woff)format('woff');
+}
+
+
+
+html{
+    margin:0px;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+body{
+    max-width: 100%;
+    margin:0px;
+    font-family: 'formula', sans-serif;
+}
+
+/*______JAVASCRIPT______*/
+
+.loader {
+    width:20%;
+    height:20%;
+    position: absolute;
+    background:white;
+    top:30%;
+    left:39%;
+    align-items: center;
+    align-content: center;
+}
+
+.loader-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:white;
+    z-index:999;
+    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+}
+
+.loader-container.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/*______HEADER______*/
+
+.header{ 
+    position: fixed;
+    display: grid;
+    height: 100px;
+    grid-template-columns:3fr 3fr 1fr 3fr 3fr;
+    grid-gap:50px;
+    gap:50px;
+    border: 2.5px solid black;
+    background: white;
+    z-index:1;
+    place-items: center;
+    margin:-1.5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header a {
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+.header a:hover {
+    transition: 0.5s;
+}
+
+.header svg{
+    width:75%;
+    max-height: 100%;
+    display: block;
+}
+
+.header svg:hover path{
+    fill:#FFC700;
+}
+
+.header svg:hover polygon{
+    fill:#FFC700;
+}
+
+.fleche{
+    margin-left: 90%;
+    margin-top:43%;
+    width:7%;
+    height:7%;
+    position: fixed;
+
+}
+
+/*______AFFICHE DEBUT______*/
+
+.affiche {
+    margin-bottom: -40px;
+    width: auto;
+    height: auto;
+}
+
+.leconcept{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: black;
+}
+
+
+/*______TEXTE______*/
+
+
+.titre { 
+    font-family: 'formula';
+    font-size: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFC700;
+    margin-bottom: -80px;
+    background: white;
+    letter-spacing: 5px;
+}
+
+.texte{ 
+    font-family: 'migra';
+    font-size: 25px;
+    line-height: 25px;
+    text-align: left;
+    padding: 50px;
+    color: black;
+    background: white;
+}
+
+.programmation{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    background-color: white;
+}
+
+
+/*______FILMS______*/
+
+
+.titre2 {
+    font-family: 'formula';
+    text-transform: uppercase;
+    font-size: 120px;
+    margin-top: -0px;
+    margin-bottom: -60px;
+    padding-top: 80px;
+    text-align: center;
+    color: #FFC700;
+    background: black;
+    letter-spacing: 5px;
+}
+
+.films{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 80px;
+    grid-gap:170px;
+    gap:170px;
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+.films a {
+    text-decoration: none;
+}
+
+.films2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 60px;
+    grid-gap:170px;
+    gap:170px;
+    background-color: black;
+}
+
+.films2 a {
+    text-decoration: none;
+}
+
+.img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.img:hover{
+    -webkit-filter: grayscale(0);
+    filter: none;
+}
+
+.nomfilm{
+    font-family: 'formula';
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.tempsfilm{
+    font-family: 'formula2';
+    margin-top: -55px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFC700;
+    text-decoration: none;
+}
+

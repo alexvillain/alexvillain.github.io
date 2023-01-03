@@ -1,0 +1,293 @@
+/*______CODE PRINCIPAL______*/
+
+@font-face{
+    font-family: 'formula';
+    src: url(font/PPFormulaCondensed-Black.woff2)format('woff2');
+    src: url(font/PPFormulaCondensed-Black.woff)format('woff');
+}
+
+
+@font-face{
+    font-family: 'formula2';
+    src: url(font/PPFormulaCondensed-Bold.woff2)format('woff2');
+    src: url(font/PPFormulaCondensed-Bold.woff)format('woff');
+}
+
+@font-face{
+    font-family: 'migra';
+    src: url(font/PPMigra-Regular.woff2)format('woff2');
+    src: url(font/PPMigra-Regular.woff)format('woff');
+}
+
+
+
+html{
+    margin:0px;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+body{
+    max-width: 100%;
+    margin:0px;
+    font-family: 'formula', sans-serif;
+}
+
+/*______JAVASCRIPT______*/
+
+.loader {
+    width:20%;
+    height:20%;
+    position: absolute;
+    background:white;
+    top:30%;
+    left:39%;
+    align-items: center;
+    align-content: center;
+}
+
+.loader-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:white;
+    z-index:999;
+    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+}
+
+.loader-container.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/*______HEADER______*/
+
+.header{ 
+    position: fixed;
+    display: grid;
+    height: 100px;
+    grid-template-columns:3fr 3fr 1fr 3fr 3fr;
+    grid-gap:50px;
+    gap:50px;
+    border: 2.5px solid black;
+    background: white;
+    z-index:1;
+    place-items: center;
+    margin:-1.5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header a {
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+.header a:hover {
+    transition: 0.5s;
+}
+
+.header svg{
+    width:75%;
+    max-height: 100%;
+    display: block;
+    fill: black;
+}
+
+.header svg:hover path{
+    fill:#FFC700;
+}
+
+.header svg:hover polygon{
+    fill:#FFC700;
+}
+
+.fleche{
+    margin-left: 90%;
+    margin-top:43%;
+    width:7%;
+    height:7%;
+    position: fixed;
+
+}
+
+
+/*______BILLETERIE______*/
+
+
+.billeterie{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: -50px;
+    background-color: black;
+}
+
+.titre { 
+    font-family: 'formula';
+    font-size: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFC700;
+    margin-bottom: -120px;
+    background-color: black;
+    letter-spacing: 5px;
+    padding: 50px;
+}
+
+.billets{ 
+    display: grid;
+    height: 50%;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:50px;
+    gap:50px;
+    background: black;
+    z-index:1;
+    place-items: center;
+   padding: 50px;
+   margin-top: -170px;
+   font-size: 50px;
+}
+
+
+.tigrou { 
+    text-decoration: none;
+    color: white;
+    border: 2.5px solid white;
+    border-radius: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 15px;
+}
+
+.tigredoux { 
+    text-decoration: none;
+    color: white;
+    border: 2.5px solid white;
+    border-radius: 50px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 15px;
+}
+
+.tigredubengale { 
+    text-decoration: none;
+    color: white;
+    border: 2.5px solid white;
+    border-radius: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 15px;
+}
+
+.tigrou:hover{
+    color:#FFC700;
+    border: 2.5px solid #FFC700;
+}
+
+.tigredoux:hover{
+    color:#FFC700;
+    border: 2.5px solid #FFC700;
+}
+
+.tigredubengale:hover{
+    color:#FFC700;
+    border: 2.5px solid #FFC700;
+}
+
+
+
+.prix{ 
+    display: grid;
+    font-family: 'formula';
+    text-transform: uppercase;
+    font-size: 50px;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:50px;
+    gap:50px;
+    color: white;
+    background: black;
+    z-index:1;
+    place-items: center;
+   padding: 50px;
+}
+
+.explain{
+    display: grid;
+    font-family: 'migra';
+    font-size: 25px;
+    line-height: 25px;
+    text-align: left;
+    padding: 80px;
+    color: white;
+    background: black;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:120px;
+    gap:120px;
+    margin-top: -120px;
+    margin-bottom: 60px;
+}
+
+/*______INFOS PRATIQUES______*/
+
+
+.titre2 {
+    font-family: 'formula';
+    text-transform: uppercase;
+    font-size: 120px;
+    margin-top: -70px;
+    margin-bottom: 50px;
+    padding-top: 80px;
+    text-align: center;
+    color: #FFC700;
+    background: white;
+    letter-spacing: 5px;
+}
+
+.texte{ 
+    font-family: 'migra';
+    font-size: 25px;
+    line-height: 25px;
+    text-align: left;
+    padding: 50px;
+    margin-top: -100px;
+    color: black;
+    background: white;
+}
+
+.infospratiques{
+    font-size: 40px;
+    margin-top: -60px;
+    margin-bottom: 0px;
+    padding-top: 72px;
+    color: white;
+    background-color: black;
+}
+
+.nomfilm{
+    font-family: 'formula';
+    font-size: 50px;
+    margin-top: -70px;
+    padding: 50px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: white;
+}
+
+.tempsfilm{
+    font-family: 'formula2';
+    margin-top: -160px;
+    font-size: 30px;
+    padding: 50px;
+    color: #FFC700;
+    background-color: white;
+    text-decoration: none;
+}
